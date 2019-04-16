@@ -14,6 +14,9 @@
         I was not able to complete this task yet, but think that I am close. I am trying to use a do while loop and some
         if statements to complete this.
 
+        *I currently have a never ending flip coin game going on. While fun, this does get old rather quickly so I will
+        need to figure out why this is happening and correct it this evening.
+
     Command Line Clock: This tasks requires that you create a method called clock that utilizes the built in
     LocalDateTime object to constantly print out the current time to the console. This should be done on a second by
     second basis.
