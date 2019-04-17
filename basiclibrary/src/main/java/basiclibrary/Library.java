@@ -3,17 +3,30 @@
  */
 import java.util.Arrays;
 import java.util.Random;
+
 //package basiclibrary;
 
 public class Library {
     public static void main(String[] args){
+        // start of dice game
         int n = 4; //number of rolls
         int m = 8;
         int o = 12;
-//        int sides = 6; //number of sides on the dice
         roll(n);
         roll(m);
         roll(o);
+
+        // start of duplicate assignment
+        int[] array1 = new int[] {1, 2, 3, 4, 5, 6, 6, 7, 8};
+//        int[] array2 = new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9};
+//        int[] array3 = new int[] {1, 2, 3, 4, 5, 5, 5, 6, 7};
+//
+//        containsDuplicates(array1);
+//        containsDuplicates(array2);
+//        containsDuplicates(array3);
+
+        //starts averaging assignment
+        arrayAverage(array1);
 
     }
     public static int[] roll(int value) {
@@ -26,6 +39,33 @@ public class Library {
         System.out.println(Arrays.toString(rollingArray));
         return rollingArray;
     }
+
+//    public static boolean containsDuplicates(int[] input) {
+//        for (int i =0; i < input.length; i++) {
+//            for (int j = i + 1; j < input.length; j++) {
+//                if (input[i].equals(input[j])) {
+//                    return true;
+//                }else {
+//                    return false;
+//                }
+//            }
+//        }
+//        return;
+//    }
+
+    public static int arrayAverage(int[] input) {
+        int total = 0;
+        int average = total/input.length;
+        for (int value : input) {
+            total = total + value;
+        }
+        System.out.println(average);
+        return average;
+    }
 }
+
+
+
+
 
 //
