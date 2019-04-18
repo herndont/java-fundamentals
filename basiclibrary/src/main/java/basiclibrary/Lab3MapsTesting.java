@@ -44,7 +44,16 @@ public class Lab3MapsTesting {
 
     //starts Tallying Election challenge
     public static void tally(List<String> voteList){
-        Map<String, Integer>
+        Map<String, Integer> map = new HashMap<>();
+
+        for (String i : voteList) {
+            Integer j = map.get(i);
+            map.put(i, (j == null) ? 1 : j + 1);
+        }
+        for (Map.Entry<String, Integer > val : map.entrySet()) {
+            System.out.println("Candidate " + val.getKey() + " " + "Received" + ": " + val.getValue() + " Votes");
+//            System.out.println(Collections.max(map));
+        }
     }
 
 
