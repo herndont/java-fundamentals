@@ -6,14 +6,28 @@ public class Main {
     public static void main(String[] args) {
 
         //pluralize variables
-        int animalCount = 0;
+        int animalCount = 1;
         String animalName = "dog";
         pluralize(animalCount, animalName);
+
+        int animalCount2 = 5;
+        String animalName2 = "Raccoon";
+        pluralize(animalCount2, animalName2);
+
+        int animalCount3 = 25;
+        String animalName3 = "Giraffe";
+        pluralize(animalCount3, animalName3);
+
         //pluralize system out
-        System.out.println("I own " + animalCount + " " + pluralize(animalCount, "dog") + ".");
+        System.out.println("I own " + animalCount + " " + pluralize(animalCount, animalName) + ".");
+        System.out.println("I own " + animalCount2 + " " + pluralize(animalCount2, animalName2) + ".");
+        System.out.println("I own " + animalCount3 + " " + pluralize(animalCount3, animalName3) + ".");
+
 
         //flipHeads system out
         System.out.println(flipNHeads(1));
+        System.out.println(flipNHeads(5));
+        System.out.println(flipNHeads(3));
 
         //Clock
         Clock();
@@ -29,7 +43,7 @@ public class Main {
     }
 
 
-    public static int flipNHeads(int headCount) {
+    public static String flipNHeads(int headCount) {
         int flips = 0;
         int heads = 0;
 
@@ -44,8 +58,7 @@ public class Main {
             }
             flips++;
         }
-        System.out.println("It took " + flips + " flips to flip " + heads + " heads in a row.");
-        return flips;
+        return ("It took " + flips + " flips to flip " + heads + " heads in a row.");
     }
 
     public static void Clock(){
