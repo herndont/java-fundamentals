@@ -14,18 +14,23 @@
     contained any elements that were of equal value. I used a for each loop to do this, but have not quite been able to 
     make this one work. 
     
-    Completed: This task is not yet complete. I am a little messed up on the returns. I am close so I don't think finishing this one should 
-    take too long.
+    Completed: This challenge is now complete and ready for re-submission.
 
 
    ####Calculating Averages:
     This task required that a method be written that sums the values of all of the elements within the array and then
     averages the sum and returns the averaged value.
     
-    Completed: This task is not yet completed. I think that I am close to having this complete as I have been able to
-    get the sum of the array, but am messed up on the returns again and haven't been able to complete the average portion.
+    Completed: This challenge is now complete and is ready for re-submission. I used a loop to go throgh and add all 
+    values together and then returned the total divided by the array's initial length.
     
    ####Array of Arrays:
-   I have not started on this one yet.
+    Given an array of arrays calculate the average value for each array and return the array with the lowest average.
     
+    Completed: This function took two methods. The first uses two for loops to iterate over the arrays one by one and
+    return the averages of each array into a new array named averages. Then I use another method and
+     for loop to iterate over the averages array and find the minimum value. I return the averaged value and the indices
+     which shows what week that value is the average of.
+     
+        
     Trouble Areas: Syntax, Editors, and just overall understanding of the new code. This will take some time.
