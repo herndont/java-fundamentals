@@ -42,10 +42,10 @@ public class Main {
         return animalName;
     }
 
-
-    public static String flipNHeads(int headCount) {
-        int flips = 0;
-        int heads = 0;
+//Going to have to make sure that the heads are done in a row and not total.
+    public static int flipNHeads(int n) {
+        int Flips = 0;
+        int i = 0;
 
         while (heads < headCount) {
             double number = Math.random();
@@ -74,8 +74,4 @@ public class Main {
         }
     }
 }
-
-
-
-
 
