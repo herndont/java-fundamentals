@@ -1,20 +1,36 @@
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 public class Main {
 
     public static void main(String[] args) {
 
         //pluralize variables
-        int animalCount = 5;
+        int animalCount = 1;
         String animalName = "dog";
         pluralize(animalCount, animalName);
-        //pluralize system out
-        System.out.println("I own " + animalCount + " " + pluralize(animalCount, "dog") + ".");
 
-        //flipHeads variables
-//        int heads = 5;
-        int n = 5;
+        int animalCount2 = 5;
+        String animalName2 = "Raccoon";
+        pluralize(animalCount2, animalName2);
+
+        int animalCount3 = 25;
+        String animalName3 = "Giraffe";
+        pluralize(animalCount3, animalName3);
+
+        //pluralize system out
+        System.out.println("I own " + animalCount + " " + pluralize(animalCount, animalName) + ".");
+        System.out.println("I own " + animalCount2 + " " + pluralize(animalCount2, animalName2) + ".");
+        System.out.println("I own " + animalCount3 + " " + pluralize(animalCount3, animalName3) + ".");
+
+
         //flipHeads system out
-//        System.out.println("It took " + Flips + " flips to flip " + n + " heads in a row");
+        System.out.println(flipNHeads(1));
+        System.out.println(flipNHeads(5));
         System.out.println(flipNHeads(3));
+
+        //Clock
+        Clock();
 
     }
 
@@ -31,37 +47,31 @@ public class Main {
         int Flips = 0;
         int i = 0;
 
-        while (i < n) {
+        while (heads < headCount) {
             double number = Math.random();
-            System.out.println(number);
             if (number >= .5) {
-                Flips++;
-                n++;
-                i++;
+                heads++;
                 System.out.println("Heads");
             } else {
-                Flips++;
+                heads = 0;
                 System.out.println("Tails");
             }
+            flips++;
         }
-        return n;
+        return ("It took " + flips + " flips to flip " + heads + " heads in a row.");
+    }
+
+    public static void Clock(){
+        int lastSecPrinted = 0;
+        while(true){
+                LocalDateTime now = LocalDateTime.now();
+                String time = now.format(DateTimeFormatter.ofPattern("HH:mm:ss"));
+
+            if (lastSecPrinted != now.getSecond()) {
+                System.out.println(time);
+                lastSecPrinted = now.getSecond();
+            }
+        }
     }
 }
-
-//        do{
-//            double number = Math.random();
-//
-//            if (number > .5){
-//            Flips++;
-//            n++;
-//            System.out.println("Heads");
-//            } else {
-//            Flips++;
-//            System.out.println("Tails");
-//            }
-//        } while (n <  heads);
-
-
-
-
 
