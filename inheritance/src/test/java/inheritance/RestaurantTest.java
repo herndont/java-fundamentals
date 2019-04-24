@@ -1,16 +1,18 @@
 package inheritance;
 
+import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert;
 
 public class RestaurantTest {
 
     @Test
-    public void toStringTest() {
+    public void restaurantToStringTest() {
         Restaurant r = new Restaurant("BK", 4, "$");
         System.out.println(r);
 
+//        Assert.assertArrayEquals();
     }
 
     @Test
