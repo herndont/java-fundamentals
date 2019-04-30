@@ -6,6 +6,7 @@ public class Review {
     public double stars;
 
     public Review(String body, String author, double stars) {
+
         this.body = body;
         this.author = author;
         this.stars = stars;

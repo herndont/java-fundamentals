@@ -11,6 +11,14 @@ public class Restaurant {
         this.price = price;
     }
 
+    public String returnName() {
+        return name;
+    }
+
+    public int getStars() {
+        
+    }
+
     public String toString() {
         return "The Restaurant " + name + " has a rating of " + stars + " stars and a reference of " + price +
                 " out of 5 for price.";
