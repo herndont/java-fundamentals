@@ -64,6 +64,12 @@
     Each Class currently has their own class file and test file as well. The functions for each class are written within
     the class instantiation on the class file.
     
+        -Theater: The Theater Class has the addMovie, removeMovie, toString, and addReview methods
+        -Shop: The Shop Class has the addReview and toString methods.
+        -Restaurant: The restaurant class has the addReview and toString methods.
+    
+    A second constructor was added onto the theater method for the addition of the specific movie comment to be added.
+     
+    
 ## Testing 
-    I will need to go back and figure out the testing of these classes. Some of the in class lecture on 4/23/19 gave me 
-    some good examples and I will go back and use these to test the viability of the methods in use.
+    Methods for all of the classes have been tested in a specific test file for each class. 
